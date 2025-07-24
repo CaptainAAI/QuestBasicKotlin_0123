@@ -13,3 +13,10 @@ fun ContohList() {
     println(shape)
     shape.remove("Triangle")
     println(shape)
+
+    shape[0] = "Oval"
+    println(shape)
+
+    val shapesLocked: List<String> = shape
+    println(shapesLocked)
+}
