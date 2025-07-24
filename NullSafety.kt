@@ -13,3 +13,13 @@ fun nullSafety() {
     } else {
         println("inferredNonNull is not null")
     }
+
+    println(neverNull.length) 
+    println(nullable?.length) 
+
+    
+    fun strLength(notNull: String): Int {
+        return notNull.length
+    }
+    println(strLength(neverNull)) 
+}
